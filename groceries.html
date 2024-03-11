@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    #grocery-list {
+      width: 800px;
+    }
+
+    /* each item in the grocery-list */
+    #grocery-list div {
+      display: grid;
+      grid-template-columns: 200px 150px 150px 150px 150px;
+      grid-template-rows: 20px auto;
+      margin-bottom: 20px;
+    }
+
+    #grocery-list > :not(:first-child){
+      height: 100px;
+    }
+
+    #grocery-list div img {
+      height: 100px;
+      justify-self: center;
+    }
+
+    #grocery-list div div {
+    }
+
+    #totalPrice {
+      width: 800px;
+      padding: 20px;
+      padding-left: 56px;
+      border-top: 3px solid #66a1c8;
+      text-align: right;
+    }
+  </style>
+  <title>Grocery Application</title>
+</head>
+
+<body>
+  <h2>Groceries</h2>
+  <div id="grocery-list"></div>
+  <script src="grocery.js"></script>
+</body>
+
+</html>
